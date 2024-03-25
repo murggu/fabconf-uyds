@@ -33,6 +33,8 @@ module "synapse_spark_pool" {
   basename             = local.safe_basename
   synapse_workspace_id = module.synapse_workspace.id
 
+  spark_version = 3.3
+
   module_enabled = local.enable_synapse_spark_pool
 }
 
